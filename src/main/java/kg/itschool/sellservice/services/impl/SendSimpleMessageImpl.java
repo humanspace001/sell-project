@@ -16,7 +16,7 @@ public class SendSimpleMessageImpl implements SendSimpleMessage {
     @Override
     public void sendSimpleMessage(String to, String text) {
         SimpleMailMessage mailMessage = new SimpleMailMessage();
-        mailMessage.setFrom("adilets988@gmail.com");
+        mailMessage.setFrom("osmonov560@gmail.com");
         mailMessage.setTo(to);
         mailMessage.setText("Ваш код подтверждения: " + text + " Никому не передавайте");
         javaMailSender.send(mailMessage);
